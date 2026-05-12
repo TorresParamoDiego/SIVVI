@@ -1,0 +1,151 @@
+timestamp,curp,pregunta_id,pregunta,respuesta,valor,omitida,omitted_count,violencia_fisica,violencia_psicologica,violencia_economica,violencia_sexual,violencia_verbal,violencia_digital,negligencia
+2026-05-12T10:49:43,LOP,1,¿Tienes moretones o marcas que no puedes explicar después de convivir con esa persona?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,2,¿Te han empujado durante una discusión o al intentar retirarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,3,"¿Has recibido jalones, bofetadas o golpes durante un conflicto?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,4,¿Te han sujetado con fuerza para impedir que te muevas o te alejes?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,5,¿Te impiden salir de un lugar cuando quieres irte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,6,¿Te han aventado o empujado contra una pared o un mueble?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,7,¿Te han jalado del cabello o de la ropa para detenerte?,NO MUY FRECUENTEMENTE,0.25,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,8,¿Te han aventado objetos cerca o hacia ti para intimidarte?,FRECUENTEMENTE,0.75,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,9,"¿Presentas marcas de dedos, sujetones o agarres en brazos o muñecas?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,10,¿Sientes dolor físico después de una discusión o enfrentamiento?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,11,¿Te has lesionado varias veces en contextos parecidos sin una explicación convincente?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,12,¿Alguien te ha inmovilizado o impedido moverte durante un conflicto?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,13,"¿Golpean paredes, puertas u objetos cerca de ti para asustarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,14,¿Te cierran el paso o te rodean para presionarte físicamente?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,15,¿Te empujan o apartan cuando intentas hablar o defenderte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,16,"¿Te queda dolor en muñecas, brazos o cuello por cómo te sujetaron?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,17,¿Te han tirado al suelo durante una pelea o discusión?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,18,¿Usan objetos de casa para amenazarte o golpearte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,19,¿Te impiden buscar atención médica después de una agresión?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,20,¿Te han sacudido o zamarreado durante una discusión?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,21,¿Notas dolor o molestia corporal frecuente después de convivir con esa persona?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,22,¿Te hacen sentir responsable de casi todo lo malo que ocurre?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,23,¿Te ponen obstáculos para convivir con tus amistades o familia?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,24,¿Sientes que te vigilan o controlan casi todo el tiempo?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,25,¿Minimizan o invalidan lo que sientes cuando expresas una molestia?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,26,"¿Te amenazan con dejarte solo, sacarte de la casa o retirarte apoyo?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,27,¿Cambian la versión de los hechos para confundirte o hacerte dudar?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,28,¿Usan el silencio prolongado como castigo cuando haces algo que no les gusta?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,29,¿Te humillan o ridiculizan cuando están solos contigo?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,30,¿Te dicen que recuerdas mal aunque estés seguro de lo ocurrido?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,31,¿Usan los celos para controlar con quién hablas o dónde vas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,32,¿Sientes que debes pedir permiso para acciones básicas de tu vida?,SIEMPRE,1.0,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,33,¿Te dicen que tú provocas su enojo o su maltrato?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,34,¿Te sientes inseguro o en alerta dentro de tu casa o espacio cercano?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,35,¿Te comparan con otras personas para hacerte sentir menos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,36,¿Te amenazan con divulgar información personal para presionarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,37,"¿Te quitan libertad para decidir sobre estudios, trabajo o actividades?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,38,¿Te dicen que nadie te va a creer si cuentas lo que pasa?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,39,¿Observan cada reacción tuya para corregirte o intimidarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,40,¿Sientes que te dejan sin apoyo emocional de forma intencional?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,41,¿Te dicen que exageras o inventas cuando cuentas un problema?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,42,¿Usan el miedo o la presión para que obedezcas sin cuestionar?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,43,¿Te insultan de manera directa cuando se enojan contigo?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,44,¿Te hablan a gritos de forma repetida o para intimidarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,45,¿Te ponen apodos ofensivos o degradantes?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,46,¿Se burlan de tus errores para hacerte sentir mal?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,47,¿Te descalifican o te hablan como si no valieras?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,48,¿Te humillan delante de otras personas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,49,"¿Te amenazan con hacerte daño, echarte o castigarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,50,¿Usan palabras degradantes para referirse a ti?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,51,¿Usan sarcasmo o burlas que te dejan en ridículo?,FRECUENTEMENTE,0.75,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,52,¿Te interrumpen o no te dejan terminar de hablar?,A VECES,0.5,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,53,¿Te corrigen de manera humillante o con desprecio?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,54,"¿Se burlan de ti cuando expresas tristeza, enojo o miedo?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,55,"¿Te dicen cosas como que no sirves, no puedes o no vales?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,56,¿Te gritan delante de familiares o personas cercanas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,57,¿Desacreditan tu opinión o tus logros de manera repetida?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,58,¿Te mandan mensajes ofensivos o insultantes?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,59,¿Te callan con palabras agresivas cuando intentas hablar?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,60,¿Se burlan de ti cuando lloras o muestras vulnerabilidad?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,61,¿Te culpan usando insultos o palabras ofensivas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,62,¿Te dicen que te van a echar o dejar fuera usando gritos o insultos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,63,"¿Te hacen comentarios ofensivos sobre tu vida, decisiones o forma de ser?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,64,¿Controlan o retienen el dinero que ganas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,65,"¿Te quitan la tarjeta, clave o acceso a tu dinero?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,66,¿Te exigen justificar cada gasto que haces?,FRECUENTEMENTE,0.75,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,67,¿Te ponen obstáculos para que trabajes o busques empleo?,A VECES,0.5,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,68,¿Te obligan a pedir dinero para cosas básicas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,69,¿Ocultan o restringen dinero para castigarte o controlarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,70,¿Usan tu nombre o te meten en deudas sin tu autorización?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,71,¿Hacen compras o contratos con tu nombre sin consultarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,72,¿Te quitan documentos importantes para limitarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,73,¿Te impiden pagar o usar transporte para tus actividades?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,74,"¿Te niegan dinero para comida, medicinas o necesidades básicas?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,75,¿Te exigen entregar todo tu ingreso o beca?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,76,¿Retrasan a propósito el dinero que te corresponde para controlarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,77,¿Usan el dinero para impedir que sigas estudiando o capacitándote?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,78,¿Te hacen cubrir gastos que no te corresponden?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,79,"¿Te condicionan comida, apoyo o recursos a obedecer?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,80,"¿Retienen beca, pensión o ayuda económica que te corresponde?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,81,¿Te revisan y cuestionan constantemente cada compra?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,82,"¿Cortan internet, luz, comida u otros servicios para presionarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,83,¿Te presionan para que renuncies o dejes tu empleo?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,84,¿Sientes que te mantienen sin recursos para que dependas de ellos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,85,¿Te tocan partes íntimas sin tu consentimiento?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,86,"¿Te presionan para besos, abrazos o contacto físico que no quieres?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,87,¿Insisten en conductas sexuales después de que dijiste que no?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,88,¿Te hacen comentarios sexuales que te incomodan o te avergüenzan?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,89,¿Te presionan para enviar imágenes íntimas o privadas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,90,¿Comparten fotos o videos íntimos sin tu autorización?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,91,¿Te tocan de forma invasiva aunque hayas pedido que paren?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,92,¿Te obligan a ver contenido sexual o situaciones que no deseas?,SIEMPRE,1.0,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,93,¿Te amenazan o presionan para conseguir favores de tipo sexual?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,94,¿Ignoran tus límites físicos incluso cuando los expresas claramente?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,95,¿Reaccionan con enojo o castigo cuando rechazas algo sexual?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,96,¿Te hacen preguntas sexuales que te incomodan o invaden tu privacidad?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,97,¿Te manipulan para aceptar contacto físico o sexual?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,98,¿Te hacen quedarte en una situación íntima o incómoda aunque quieras salir?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,99,¿Revisan tu cuerpo o tu ropa sin que tú lo autorices?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,100,¿Hacen chistes sexuales repetidos que te incomodan?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,101,¿Toman fotos o videos de ti sin pedir autorización?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,102,"¿Usan regalos, dinero o favores para presionarte sexualmente?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,103,"¿Te dejan de hablar, te castigan o te presionan cuando marcas límites?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,104,¿Te han tocado de forma íntima cuando estabas dormido/a o descansando?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,105,¿Usan comentarios sobre tu cuerpo para presionarte o incomodarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,106,¿Te piden contraseñas o códigos de acceso para revisar tus cuentas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,107,"¿Revisan tu celular, chats o fotos sin tu permiso?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,108,¿Exigen saber dónde estás en tiempo real o revisan tu ubicación constantemente?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,109,¿Te exigen responder mensajes o llamadas de inmediato siempre?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,110,"¿Crean cuentas falsas para vigilarte, seguirte o provocarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,111,"¿Publican información, fotos o estados tuyos sin pedirte permiso?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,112,¿Comparten fotos o conversaciones privadas sin autorización?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,113,"¿Te mandan mensajes ofensivos, burlones o amenazantes?",FRECUENTEMENTE,0.75,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,114,"¿Te amenazan, hostigan o exhiben en redes sociales?",FRECUENTEMENTE,0.75,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,115,"¿Te obligan a enseñar chats, llamadas o redes para comprobar algo?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,116,¿Te cambian claves o te bloquean el acceso a cuentas sin avisarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,117,¿Usan aplicaciones o herramientas para rastrear tu movimiento?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,118,¿Te llaman por video para comprobar dónde estás o con quién estás?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,119,¿Revisan con quién interactúas en redes para controlarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,120,¿Sientes que no tienes privacidad en tu vida digital?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,121,¿Usan tus claves para entrar a tus cuentas sin tu permiso?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,122,¿Difunden rumores o mensajes falsos sobre ti por internet?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,123,¿Te etiquetan o mencionan en publicaciones sin tu autorización?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,124,¿Te exigen enviar tu ubicación cada vez que sales?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,125,"¿Borran contactos, chats o historial para aislarte o controlarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,126,"¿Recibes mensajes repetidos para presionarte, vigilarte o molestarte?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,127,¿Te dejan sin comida suficiente o sin acceso regular a alimentos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,128,¿No te atienden cuando estás enfermo/a o con dolor?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,129,¿Te dejan solo/a sin la supervisión necesaria?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,130,¿Olvidan o dejan de darte medicamentos que necesitas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,131,¿No te llevan a consultas o revisiones médicas importantes?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,132,"¿Te dejan sin ropa, abrigo o artículos básicos necesarios?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,133,¿No cubren necesidades básicas de higiene de forma repetida?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,134,¿No responden a emergencias cuando necesitas ayuda?,SIEMPRE,1.0,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,135,¿Te dejan en un lugar inseguro o riesgoso sin cuidado?,NO MUY FRECUENTEMENTE,0.25,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,136,¿No respetan o no permiten un descanso adecuado cuando lo necesitas?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,137,¿Te niegan apoyo básico para cubrir necesidades esenciales?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,138,¿Te dejan esperando de manera constante sin recogerte o acompañarte cuando hace falta?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,139,¿Vives o pasas tiempo en condiciones insalubres que no corrigen?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,140,¿No te protegen cuando otra persona te agrede o te pone en riesgo?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,141,"¿Ignoran señales claras de malestar, dolor o cansancio?",SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,142,¿No te dan transporte o apoyo para asistir a citas importantes?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,143,¿Dejan a menores sin la supervisión necesaria por periodos inadecuados?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,144,¿Te dejan sin acceso regular a agua o servicios básicos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,145,¿No corrigen riesgos domésticos obvios y peligrosos?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,146,¿Te cargan responsabilidades de cuidado para las que no tienes capacidad o apoyo?,SIEMPRE,1.0,False,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,147,¿Te ignoran por completo cuando estás en crisis o muy mal?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,148,¿Te impiden salir de casa y además revisan tu celular para controlarte?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,149,¿Te controlan el dinero y te insultan cuando pides algo básico?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
+2026-05-12T10:49:43,LOP,150,¿Después de una agresión no te llevan a revisión médica ni te apoyan?,SALTADA,0.0,True,137,0.3025,0.8261,0.6150,0.9835,0.0000,0.0000,0.0000
