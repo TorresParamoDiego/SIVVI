@@ -9,4 +9,10 @@
 .vscode/
 
 .venv/
+
+# Generated results from the application (do not commit)
 resultados.csv
+
+# Common Python artefacts
+__pycache__/
+*.py[cod]
