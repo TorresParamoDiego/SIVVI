@@ -1,111 +1,222 @@
 ﻿import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
-from PIL import Image, ImageTk
 
 from base_conocimiento import base_de_conocimiento
 from motor_inferencia import evaluar_caso, interpretar_nivel, descripcion_respuesta, unidades_respuesta
 from guardar_resultados import guardar_resultados
+
+
 class EvaluadorGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("Evaluación de Caso")
         self.root.configure(bg="#f3f4f8")
-        self.root.state("zoomed")  # Windows
-        #self.root.attributes("-fullscreen", True) # fullscreen real
+
+        self.centrar_ventana(1024, 768)
+        self.root.minsize(800, 600)
+
+        self.colors = {
+            "bg": "#f3f4f8",
+            "card": "#ffffff",
+            "text": "#111827",
+            "muted": "#6b7280",
+            "border": "#d1d5db",
+            "header": "#1e3a5f",
+            "accent": "#2563eb",
+            "accent_dark": "#1d4ed8"
+        }
 
         self.curp = tk.StringVar()
         self.preguntas = list(base_de_conocimiento.keys())
         self.indice = 0
         self.respuestas = {}
         self.omitidos = 0
+        self.tamanio_base = 11
 
-        self.crear_estilos()
+        self.estilo = ttk.Style(self.root)
+        self.estilo.theme_use("clam")
+
         self.crear_layout()
+        self.actualizar_estilos()
         self.crear_pantalla_curp()
-    def crear_layout(self):
-        self.header = tk.Frame(self.root, bg="#1e3a5f", height=90)
-        self.header.pack(fill="x", side="top")
 
+    def centrar_ventana(self, ancho, alto):
+        ancho_pantalla = self.root.winfo_screenwidth()
+        alto_pantalla = self.root.winfo_screenheight()
+        x = int((ancho_pantalla / 2) - (ancho / 2))
+        y = int((alto_pantalla / 2) - (alto / 2))
+        self.root.geometry(f"{ancho}x{alto}+{x}+{y}")
+
+    def crear_layout(self):
+        self.header = tk.Frame(self.root, bg=self.colors["header"], height=80)
+        self.header.pack(fill="x", side="top")
         self.header.pack_propagate(False)
 
-        logo_izq = tk.Label(
-            self.header,
-            text="🏥 LOGO",
-            bg="#1e3a5f",
-            fg="white",
-            font=("Segoe UI", 14, "bold")
-        )
-        logo_izq.pack(side="left", padx=20)
+        header_left = tk.Frame(self.header, bg=self.colors["header"])
+        header_left.pack(side="left", padx=32, pady=12)
 
-        titulo = tk.Label(
-            self.header,
+        self.lbl_titulo_header = tk.Label(
+            header_left,
             text="Sistema de Evaluación de Caso",
             fg="white",
-            bg="#1e3a5f",
-            font=("Segoe UI", 22, "bold")
+            bg=self.colors["header"],
+            font=("Segoe UI", 18, "bold")
         )
-        titulo.pack(side="left", expand=True)
+        self.lbl_titulo_header.pack(anchor="w")
 
-        logo_der = tk.Label(
-            self.header,
-            text="🧠 LOGO",
-            bg="#1e3a5f",
-            fg="white",
-            font=("Segoe UI", 14, "bold")
+        self.lbl_sub_header = tk.Label(
+            header_left,
+            text="Cuestionario guiado y resultados inmediatos",
+            fg="#dbeafe",
+            bg=self.colors["header"],
+            font=("Segoe UI", 10)
         )
-        logo_der.pack(side="right", padx=20)
+        self.lbl_sub_header.pack(anchor="w")
 
-        self.contenido = tk.Frame(self.root, bg="#f3f4f8")
+        header_right = tk.Frame(self.header, bg=self.colors["header"])
+        header_right.pack(side="right", padx=32)
+
+        self.lbl_estado_header = tk.Label(
+            header_right,
+            text="Modo entrevista",
+            fg="#dbeafe",
+            bg=self.colors["header"],
+            font=("Segoe UI", 10, "bold")
+        )
+        self.lbl_estado_header.pack(anchor="e")
+
+        self.contenido = tk.Frame(self.root, bg=self.colors["bg"])
         self.contenido.pack(fill="both", expand=True)
 
-        self.footer = tk.Frame(self.root, bg="#d9dde5", height=40)
+        self.footer = tk.Frame(self.root, bg="#e5e7eb", height=45)
         self.footer.pack(fill="x", side="bottom")
-
         self.footer.pack_propagate(False)
 
-        footer_texto = tk.Label(
+        self.lbl_footer = tk.Label(
             self.footer,
-            text="© 2026 Sistema Inteligente de Evaluación",
-            bg="#d9dde5",
-            fg="#333",
+            # text="© 2026 Sistema Inteligente de Evaluación",
+            bg="#e5e7eb",
+            fg="#374151",
             font=("Segoe UI", 9)
         )
+        self.lbl_footer.pack(side="left", padx=32)
 
-        footer_texto.pack(pady=10)
-    def crear_estilos(self):
-        estilo = ttk.Style(self.root)
-        estilo.theme_use("clam")
-        estilo.configure("TButton", font=("Segoe UI", 10, "bold"), padding=8)
-        estilo.configure("Titulo.TLabel", font=("Segoe UI", 16, "bold"), background="#f3f4f8")
-        estilo.configure("Subtitulo.TLabel", font=("Segoe UI", 11), background="#f3f4f8")
-        estilo.configure("Pregunta.TLabel", font=("Segoe UI", 12), background="#f3f4f8")
-        estilo.configure("Info.TLabel", font=("Segoe UI", 10), background="#f3f4f8")
+        # Control de accesibilidad (tamaño de fuente)
+        control_fuente = tk.Frame(self.footer, bg="#e5e7eb")
+        control_fuente.pack(side="right", padx=32)
 
-    def crear_encabezado(self):
-        header = tk.Frame(self.root, bg="#3b5998", height=80)
-        header.pack(fill="x")
-        titulo = tk.Label(header, text="Sistema de Evaluación de Caso", fg="white", bg="#3b5998",
-                           font=("Segoe UI", 18, "bold"))
-        titulo.pack(pady=18)
+        tk.Label(control_fuente, text="A-", bg="#e5e7eb", fg="#374151", font=("Segoe UI", 9, "bold")).pack(side="left")
+
+        self.escala_fuente = ttk.Scale(
+            control_fuente,
+            from_=9, to=20,
+            orient="horizontal",
+            command=self.cambiar_fuente,
+            length=150
+        )
+        self.escala_fuente.set(self.tamanio_base)
+        self.escala_fuente.pack(side="left", padx=8)
+
+        tk.Label(control_fuente, text="A+", bg="#e5e7eb", fg="#374151", font=("Segoe UI", 12, "bold")).pack(side="left")
+
+    def cambiar_fuente(self, valor):
+        self.tamanio_base = int(float(valor))
+        self.actualizar_estilos()
+
+    def actualizar_estilos(self):
+        base = self.tamanio_base
+
+        # Elementos estáticos (Header / Footer)
+        self.lbl_titulo_header.config(font=("Segoe UI", base + 7, "bold"))
+        self.lbl_sub_header.config(font=("Segoe UI", base - 1))
+        self.lbl_estado_header.config(font=("Segoe UI", base - 1, "bold"))
+        self.lbl_footer.config(font=("Segoe UI", base - 2))
+
+        # Estilos dinámicos ttk
+        self.estilo.configure("TButton", font=("Segoe UI", base, "bold"), padding=8)
+        self.estilo.configure("Primary.TButton",
+                              font=("Segoe UI", base, "bold"),
+                              background=self.colors["accent"],
+                              foreground="white",
+                              padding=(16, 8))
+        self.estilo.map("Primary.TButton",
+                        background=[("active", self.colors["accent_dark"]), ("disabled", "#cbd5f5")],
+                        foreground=[("disabled", "#f3f4f8")])
+
+        self.estilo.configure("Secondary.TButton",
+                              font=("Segoe UI", base, "bold"),
+                              background="#e5e7eb",
+                              foreground="#111827",
+                              padding=(14, 8))
+        self.estilo.map("Secondary.TButton", background=[("active", "#d1d5db")])
+
+        self.estilo.configure("Titulo.TLabel", font=("Segoe UI", base + 7, "bold"), background=self.colors["card"],
+                              foreground=self.colors["text"])
+        self.estilo.configure("Subtitulo.TLabel", font=("Segoe UI", base), background=self.colors["card"],
+                              foreground=self.colors["text"])
+        self.estilo.configure("Pregunta.TLabel", font=("Segoe UI", base + 3), background=self.colors["card"],
+                              foreground=self.colors["text"])
+        self.estilo.configure("Info.TLabel", font=("Segoe UI", base - 1), background=self.colors["card"],
+                              foreground=self.colors["muted"])
+        self.estilo.configure("Muted.TLabel", font=("Segoe UI", base - 2), background=self.colors["card"],
+                              foreground=self.colors["muted"])
+        self.estilo.configure("Card.TFrame", background=self.colors["card"])
+        self.estilo.configure("TRadiobutton", background=self.colors["card"], font=("Segoe UI", base))
+        self.estilo.configure("TEntry", padding=8, font=("Segoe UI", base + 1))
+        self.estilo.configure("TProgressbar", thickness=10)
+
+    def crear_tarjeta(self):
+        tarjeta_borde = tk.Frame(
+            self.contenido,
+            bg=self.colors["border"],
+            padx=1, pady=1
+        )
+        tarjeta_borde.pack(expand=True)
+
+        tarjeta = tk.Frame(
+            tarjeta_borde,
+            bg=self.colors["card"],
+            padx=48, pady=40
+        )
+        tarjeta.pack(fill="both", expand=True)
+        return tarjeta
 
     def crear_pantalla_curp(self):
         self.limpiar_ventana()
-        frame = tk.Frame(self.contenido, bg="#f3f4f8")
-        frame.pack(expand=True, fill="both", padx=20, pady=20)
+        self.root.unbind("<Return>")
 
-        label_curp = ttk.Label(frame, text="Introduce tu CURP o identificador:", style="Subtitulo.TLabel")
-        label_curp.pack(anchor="w", pady=(0, 8))
+        tarjeta = self.crear_tarjeta()
 
-        entry_curp = ttk.Entry(frame, textvariable=self.curp, font=("Segoe UI", 11), width=40)
-        entry_curp.pack(anchor="w", pady=(0, 15))
+        titulo = ttk.Label(tarjeta, text="Bienvenida", style="Titulo.TLabel")
+        titulo.pack(anchor="w", pady=(0, 8))
+
+        texto = ttk.Label(
+            tarjeta,
+            text="Ingresa el CURP o identificador del caso para comenzar la entrevista.",
+            style="Subtitulo.TLabel"
+        )
+        texto.pack(anchor="w", pady=(0, 24))
+
+        label_curp = ttk.Label(tarjeta, text="CURP o ID", style="Muted.TLabel")
+        label_curp.pack(anchor="w", pady=(0, 6))
+
+        entry_curp = ttk.Entry(tarjeta, textvariable=self.curp, width=35, style="TEntry")
+        entry_curp.pack(anchor="w", pady=(0, 12))
         entry_curp.focus()
 
-        boton_iniciar = ttk.Button(frame, text="Iniciar cuestionario", command=self.iniciar_cuestionario)
+        ayuda = ttk.Label(
+            tarjeta,
+            text="Usa mayúsculas y sin espacios. Los resultados se guardarán automáticamente.",
+            style="Info.TLabel"
+        )
+        ayuda.pack(anchor="w", pady=(0, 24))
+
+        boton_iniciar = ttk.Button(tarjeta, text="Iniciar cuestionario", style="Primary.TButton",
+                                   command=self.iniciar_cuestionario)
         boton_iniciar.pack(anchor="w")
 
-        nota = ttk.Label(frame, text="Los resultados se guardarán en resultados.csv junto al CURP.", style="Info.TLabel")
-        nota.pack(anchor="w", pady=(15, 0))
+        self.root.bind("<Return>", lambda event: self.iniciar_cuestionario())
 
     def limpiar_ventana(self):
         for widget in self.contenido.winfo_children():
@@ -114,10 +225,13 @@ class EvaluadorGUI:
     def iniciar_cuestionario(self):
         texto_curp = self.curp.get().strip()
         if not texto_curp:
-            messagebox.showwarning("CURP obligatorio", "Por favor ingresa tu CURP o identificador antes de comenzar.")
+            messagebox.showwarning("Dato obligatorio", "Por favor ingresa un CURP o identificador válido.")
             return
 
         self.curp.set(texto_curp)
+        self.indice = 0
+        self.respuestas = {}
+        self.omitidos = 0
         self.mostrar_pregunta_actual()
 
     def mostrar_pregunta_actual(self):
@@ -130,34 +244,64 @@ class EvaluadorGUI:
         pregunta_id = self.preguntas[self.indice]
         texto_pregunta = base_de_conocimiento[pregunta_id]["pregunta"]
 
-        panel = tk.Frame(self.contenido, bg="#f3f4f8")
-        panel.pack(fill="both", expand=True, padx=40, pady=30)
+        tarjeta = self.crear_tarjeta()
 
-        titulo = ttk.Label(panel, text=f"Pregunta {self.indice+1} de {len(self.preguntas)}", style="Titulo.TLabel")
-        titulo.pack(anchor="w")
+        progreso_frame = tk.Frame(tarjeta, bg=self.colors["card"])
+        progreso_frame.pack(fill="x", pady=(0, 20))
 
-        pregunta_label = ttk.Label(panel, text=texto_pregunta, style="Pregunta.TLabel", wraplength=self.root.winfo_width() - 100)
-        pregunta_label.pack(anchor="w", pady=(12, 20))
+        progreso_label = ttk.Label(
+            progreso_frame,
+            text=f"Pregunta {self.indice + 1} de {len(self.preguntas)}",
+            style="Muted.TLabel"
+        )
+        progreso_label.pack(anchor="w", pady=(0, 6))
+
+        progreso = ttk.Progressbar(
+            progreso_frame,
+            value=self.indice + 1,
+            maximum=len(self.preguntas)
+        )
+        progreso.pack(fill="x")
+
+        pregunta_label = ttk.Label(
+            tarjeta,
+            text=texto_pregunta,
+            style="Pregunta.TLabel",
+            wraplength=700
+        )
+        pregunta_label.pack(anchor="w", pady=(0, 24))
 
         self.valor_seleccion = tk.DoubleVar(value=-1.0)
-        opciones_frame = tk.Frame(panel, bg="#f3f4f8")
-        opciones_frame.pack(anchor="w", pady=(0, 10))
+        opciones_frame = tk.Frame(tarjeta, bg=self.colors["card"])
+        opciones_frame.pack(anchor="w", pady=(0, 24))
 
         for texto, valor in unidades_respuesta:
             opcion = ttk.Radiobutton(opciones_frame, text=texto, variable=self.valor_seleccion, value=valor)
-            opcion.pack(anchor="w", pady=4)
+            opcion.pack(anchor="w", pady=6)
 
-        botones_frame = tk.Frame(panel, bg="#f3f4f8")
-        botones_frame.pack(anchor="w", pady=(20, 0))
+        botones_frame = tk.Frame(tarjeta, bg=self.colors["card"])
+        botones_frame.pack(fill="x", pady=(0, 8))
 
-        boton_saltar = ttk.Button(botones_frame, text="Saltar pregunta", command=self.saltar_pregunta)
-        boton_saltar.pack(side="left", padx=(0, 10))
+        self.boton_guardar = ttk.Button(botones_frame, text="Guardar respuesta", style="Primary.TButton",
+                                        command=self.guardar_respuesta)
+        self.boton_guardar.state(["disabled"])
+        self.boton_guardar.pack(side="left")
 
-        boton_guardar = ttk.Button(botones_frame, text="Guardar respuesta", command=self.guardar_respuesta)
-        boton_guardar.pack(side="left")
+        boton_saltar = ttk.Button(botones_frame, text="Saltar pregunta", style="Secondary.TButton",
+                                  command=self.saltar_pregunta)
+        boton_saltar.pack(side="left", padx=(12, 0))
 
-        estado = ttk.Label(panel, text=f"Omitidos: {self.omitidos}", style="Info.TLabel")
-        estado.pack(anchor="w", pady=(20, 0))
+        estado = ttk.Label(tarjeta, text=f"Omitidas: {self.omitidos}", style="Info.TLabel")
+        estado.pack(anchor="e")
+
+        self.valor_seleccion.trace_add("write", self._actualizar_boton_guardar)
+        self.root.bind("<Return>", lambda event: self.guardar_respuesta())
+
+    def _actualizar_boton_guardar(self, *_):
+        if self.valor_seleccion.get() >= 0:
+            self.boton_guardar.state(["!disabled"])
+        else:
+            self.boton_guardar.state(["disabled"])
 
     def guardar_respuesta(self):
         valor = self.valor_seleccion.get()
@@ -193,47 +337,62 @@ class EvaluadorGUI:
 
     def mostrar_resultado_final(self):
         self.limpiar_ventana()
+        self.root.unbind("<Return>")
 
         resultados_globales = evaluar_caso({k: v["valor"] for k, v in self.respuestas.items()})
         promedio = sum(resultados_globales.values()) / len(resultados_globales)
         nivel = interpretar_nivel(promedio)
 
-        panel = tk.Frame(self.contenido, bg="#f3f4f8")
-        panel.pack(fill="both", expand=True, padx=40, pady=30)
+        tarjeta = self.crear_tarjeta()
 
-        titulo = ttk.Label(panel, text="Resultado final", style="Titulo.TLabel")
-        titulo.pack(anchor="w")
+        titulo = ttk.Label(tarjeta, text="Resultado Final de Evaluación", style="Titulo.TLabel")
+        titulo.pack(anchor="w", pady=(0, 16))
 
         resumen = (
-            f"CURP: {self.curp.get()}\n"
-            f"Porcentaje global: {promedio*100:.1f}%\n"
+            f"CURP / ID: {self.curp.get()}\n"
+            f"Porcentaje global: {promedio * 100:.1f}%\n"
             f"Nivel global: {nivel}\n"
             f"Preguntas saltadas: {self.omitidos}"
         )
-        resumen_label = ttk.Label(panel, text=resumen, style="Subtitulo.TLabel", justify="left")
-        resumen_label.pack(anchor="w", pady=(10, 15))
-        
+        resumen_label = ttk.Label(tarjeta, text=resumen, style="Subtitulo.TLabel", justify="left")
+        resumen_label.pack(anchor="w", pady=(0, 20))
+
         detalles_resultados = "\n".join([
-            f"{categoria}: {valor*100:.1f}% - {interpretar_nivel(valor)}"
+            f"• {categoria}: {valor * 100:.1f}% - {interpretar_nivel(valor)}"
             for categoria, valor in resultados_globales.items()
         ])
+
         resultados_label = ttk.Label(
-            panel,
-            text=f"Resultados individuales:\n{detalles_resultados}",
-            style="Info.TLabel",
+            tarjeta,
+            text=f"Desglose por categorías:\n\n{detalles_resultados}",
+            style="Pregunta.TLabel",
             justify="left"
         )
-        resultados_label.pack(anchor="w", pady=(0, 20))
+        resultados_label.pack(anchor="w", pady=(0, 24))
+
         guardar_resultados(
             self.curp.get(),
             self.respuestas,
             self.omitidos,
             resultados_globales
         )
-        finalizar = ttk.Button(panel, text="Cerrar", command=self.root.destroy)
-        finalizar.pack(anchor="center", pady=(10, 0))
 
-        messagebox.showinfo("Encuesta guardada", "El resultado se ha guardado en resultados.csv")
+        botones_frame = tk.Frame(tarjeta, bg=self.colors["card"])
+        botones_frame.pack(anchor="w", pady=(12, 0))
+
+        btn_repetir = ttk.Button(botones_frame, text="Nueva Evaluación", style="Secondary.TButton",
+                                 command=self.reiniciar_sistema)
+        btn_repetir.pack(side="left", padx=(0, 12))
+
+        finalizar = ttk.Button(botones_frame, text="Cerrar Sistema", style="Primary.TButton", command=self.root.destroy)
+        finalizar.pack(side="left")
+
+    def reiniciar_sistema(self):
+        self.curp.set("")
+        self.indice = 0
+        self.respuestas.clear()
+        self.omitidos = 0
+        self.crear_pantalla_curp()
 
 
 def main():
