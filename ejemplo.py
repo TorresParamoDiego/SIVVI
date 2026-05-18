@@ -1,6 +1,7 @@
 ﻿import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
+from datetime import datetime
 
 from base_conocimiento import base_de_conocimiento
 from motor_inferencia import evaluar_caso, interpretar_nivel, descripcion_respuesta, unidades_respuesta
@@ -28,11 +29,14 @@ class EvaluadorGUI:
         }
 
         self.curp = tk.StringVar()
+        self.ubicacion = tk.StringVar()
         self.preguntas = list(base_de_conocimiento.keys())
         self.indice = 0
         self.respuestas = {}
         self.omitidos = 0
         self.tamanio_base = 11
+        self.start_time = None
+        self.suppress_save = False
 
         self.estilo = ttk.Style(self.root)
         self.estilo.theme_use("clam")
@@ -205,6 +209,12 @@ class EvaluadorGUI:
         entry_curp.pack(anchor="w", pady=(0, 12))
         entry_curp.focus()
 
+        label_ubic = ttk.Label(tarjeta, text="Ubicación (lugar donde se realiza)", style="Muted.TLabel")
+        label_ubic.pack(anchor="w", pady=(0, 6))
+
+        entry_ubic = ttk.Entry(tarjeta, textvariable=self.ubicacion, width=35, style="TEntry")
+        entry_ubic.pack(anchor="w", pady=(0, 12))
+
         ayuda = ttk.Label(
             tarjeta,
             text="Usa mayúsculas y sin espacios. Los resultados se guardarán automáticamente.",
@@ -232,11 +242,12 @@ class EvaluadorGUI:
         self.indice = 0
         self.respuestas = {}
         self.omitidos = 0
+        self.start_time = datetime.now()
+        self.suppress_save = False
         self.mostrar_pregunta_actual()
 
     def mostrar_pregunta_actual(self):
         self.limpiar_ventana()
-
         if self.indice >= len(self.preguntas):
             self.mostrar_resultado_final()
             return
@@ -275,17 +286,25 @@ class EvaluadorGUI:
         opciones_frame = tk.Frame(tarjeta, bg=self.colors["card"])
         opciones_frame.pack(anchor="w", pady=(0, 24))
 
+        # Si ya existe una respuesta previa, precargarla
+        prev = self.respuestas.get(pregunta_id)
+        if prev and not prev.get("omitida", False):
+            try:
+                self.valor_seleccion.set(float(prev.get("valor", -1.0)))
+            except Exception:
+                self.valor_seleccion.set(-1.0)
+
         for texto, valor in unidades_respuesta:
-            opcion = ttk.Radiobutton(opciones_frame, text=texto, variable=self.valor_seleccion, value=valor)
+            opcion = ttk.Radiobutton(opciones_frame, text=texto, variable=self.valor_seleccion, value=valor,
+                                     command=lambda v=valor: self._on_option_selected(v))
             opcion.pack(anchor="w", pady=6)
 
         botones_frame = tk.Frame(tarjeta, bg=self.colors["card"])
         botones_frame.pack(fill="x", pady=(0, 8))
 
-        self.boton_guardar = ttk.Button(botones_frame, text="Guardar respuesta", style="Primary.TButton",
-                                        command=self.guardar_respuesta)
-        self.boton_guardar.state(["disabled"])
-        self.boton_guardar.pack(side="left")
+        boton_regresar = ttk.Button(botones_frame, text="Regresar", style="Secondary.TButton",
+                                    command=self.regresar_pregunta)
+        boton_regresar.pack(side="left")
 
         boton_saltar = ttk.Button(botones_frame, text="Saltar pregunta", style="Secondary.TButton",
                                   command=self.saltar_pregunta)
@@ -294,21 +313,17 @@ class EvaluadorGUI:
         estado = ttk.Label(tarjeta, text=f"Omitidas: {self.omitidos}", style="Info.TLabel")
         estado.pack(anchor="e")
 
-        self.valor_seleccion.trace_add("write", self._actualizar_boton_guardar)
-        self.root.bind("<Return>", lambda event: self.guardar_respuesta())
+        # Enter key: confirmar opción seleccionada si hay una
+        self.root.bind("<Return>", lambda event: self._enter_pressed())
 
     def _actualizar_boton_guardar(self, *_):
-        if self.valor_seleccion.get() >= 0:
-            self.boton_guardar.state(["!disabled"])
-        else:
-            self.boton_guardar.state(["disabled"])
+        # ya no se usa: guardado automático al seleccionar
+        pass
 
-    def guardar_respuesta(self):
-        valor = self.valor_seleccion.get()
-        if valor < 0:
-            messagebox.showwarning("Respuesta requerida", "Selecciona una opción o utiliza 'Saltar pregunta'.")
+    def _on_option_selected(self, valor):
+        if getattr(self, "suppress_save", False):
             return
-
+        # Guardar inmediatamente y pasar a la siguiente pregunta
         pregunta_id = self.preguntas[self.indice]
         pregunta_texto = base_de_conocimiento[pregunta_id]["pregunta"]
         descripcion = descripcion_respuesta(valor)
@@ -321,6 +336,19 @@ class EvaluadorGUI:
         }
         self.indice += 1
         self.mostrar_pregunta_actual()
+
+    def _enter_pressed(self):
+        v = self.valor_seleccion.get()
+        if v >= 0:
+            self._on_option_selected(v)
+        else:
+            messagebox.showwarning("Respuesta requerida", "Selecciona una opción o utiliza 'Saltar pregunta'.")
+
+    def guardar_respuesta(self):
+        # preservado por compatibilidad; ahora el guardado es automático al seleccionar
+        v = self.valor_seleccion.get()
+        if v >= 0:
+            self._on_option_selected(v)
 
     def saltar_pregunta(self):
         pregunta_id = self.preguntas[self.indice]
@@ -335,6 +363,15 @@ class EvaluadorGUI:
         self.indice += 1
         self.mostrar_pregunta_actual()
 
+    def regresar_pregunta(self):
+        if self.indice <= 0:
+            # volver a la pantalla inicial
+            self.crear_pantalla_curp()
+            return
+        self.indice -= 1
+        # Al mostrar la pregunta anterior, la respuesta previa (si existe) se precargará
+        self.mostrar_pregunta_actual()
+
     def mostrar_resultado_final(self):
         self.limpiar_ventana()
         self.root.unbind("<Return>")
@@ -342,6 +379,10 @@ class EvaluadorGUI:
         resultados_globales = evaluar_caso({k: v["valor"] for k, v in self.respuestas.items()})
         promedio = sum(resultados_globales.values()) / len(resultados_globales)
         nivel = interpretar_nivel(promedio)
+
+        total_time_seconds = None
+        if self.start_time:
+            total_time_seconds = (datetime.now() - self.start_time).total_seconds()
 
         tarjeta = self.crear_tarjeta()
 
@@ -374,7 +415,9 @@ class EvaluadorGUI:
             self.curp.get(),
             self.respuestas,
             self.omitidos,
-            resultados_globales
+            resultados_globales,
+            total_time_seconds=total_time_seconds,
+            ubicacion=self.ubicacion.get()
         )
 
         botones_frame = tk.Frame(tarjeta, bg=self.colors["card"])

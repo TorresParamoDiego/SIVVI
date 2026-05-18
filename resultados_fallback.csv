@@ -1,0 +1,151 @@
+timestamp,curp,pregunta_id,pregunta,respuesta,valor,omitida,omitidos,ubicacion,total_time_seconds
+2026-05-18T12:40:00,KOKO,1,¿Tienes moretones o marcas que no puedes explicar después de convivir con esa persona?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,2,¿Te han empujado durante una discusión o al intentar retirarte?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,3,"¿Has recibido jalones, bofetadas o golpes durante un conflicto?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,4,¿Te han sujetado con fuerza para impedir que te muevas o te alejes?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,5,¿Te impiden salir de un lugar cuando quieres irte?,FRECUENTEMENTE,0.75,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,6,¿Te han aventado o empujado contra una pared o un mueble?,SIEMPRE,1.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,7,¿Te han jalado del cabello o de la ropa para detenerte?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,8,¿Te han aventado objetos cerca o hacia ti para intimidarte?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,9,"¿Presentas marcas de dedos, sujetones o agarres en brazos o muñecas?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,10,¿Sientes dolor físico después de una discusión o enfrentamiento?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,11,¿Te has lesionado varias veces en contextos parecidos sin una explicación convincente?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,12,¿Alguien te ha inmovilizado o impedido moverte durante un conflicto?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,13,"¿Golpean paredes, puertas u objetos cerca de ti para asustarte?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,14,¿Te cierran el paso o te rodean para presionarte físicamente?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,15,¿Te empujan o apartan cuando intentas hablar o defenderte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,16,"¿Te queda dolor en muñecas, brazos o cuello por cómo te sujetaron?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,17,¿Te han tirado al suelo durante una pelea o discusión?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,18,¿Usan objetos de casa para amenazarte o golpearte?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,19,¿Te impiden buscar atención médica después de una agresión?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,20,¿Te han sacudido o zamarreado durante una discusión?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,21,¿Notas dolor o molestia corporal frecuente después de convivir con esa persona?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,22,¿Te hacen sentir responsable de casi todo lo malo que ocurre?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,23,¿Te ponen obstáculos para convivir con tus amistades o familia?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,24,¿Sientes que te vigilan o controlan casi todo el tiempo?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,25,¿Minimizan o invalidan lo que sientes cuando expresas una molestia?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,26,"¿Te amenazan con dejarte solo, sacarte de la casa o retirarte apoyo?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,27,¿Cambian la versión de los hechos para confundirte o hacerte dudar?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,28,¿Usan el silencio prolongado como castigo cuando haces algo que no les gusta?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,29,¿Te humillan o ridiculizan cuando están solos contigo?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,30,¿Te dicen que recuerdas mal aunque estés seguro de lo ocurrido?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,31,¿Usan los celos para controlar con quién hablas o dónde vas?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,32,¿Sientes que debes pedir permiso para acciones básicas de tu vida?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,33,¿Te dicen que tú provocas su enojo o su maltrato?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,34,¿Te sientes inseguro o en alerta dentro de tu casa o espacio cercano?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,35,¿Te comparan con otras personas para hacerte sentir menos?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,36,¿Te amenazan con divulgar información personal para presionarte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,37,"¿Te quitan libertad para decidir sobre estudios, trabajo o actividades?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,38,¿Te dicen que nadie te va a creer si cuentas lo que pasa?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,39,¿Observan cada reacción tuya para corregirte o intimidarte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,40,¿Sientes que te dejan sin apoyo emocional de forma intencional?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,41,¿Te dicen que exageras o inventas cuando cuentas un problema?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,42,¿Usan el miedo o la presión para que obedezcas sin cuestionar?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,43,¿Te insultan de manera directa cuando se enojan contigo?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,44,¿Te hablan a gritos de forma repetida o para intimidarte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,45,¿Te ponen apodos ofensivos o degradantes?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,46,¿Se burlan de tus errores para hacerte sentir mal?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,47,¿Te descalifican o te hablan como si no valieras?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,48,¿Te humillan delante de otras personas?,FRECUENTEMENTE,0.75,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,49,"¿Te amenazan con hacerte daño, echarte o castigarte?",A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,50,¿Usan palabras degradantes para referirse a ti?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,51,¿Usan sarcasmo o burlas que te dejan en ridículo?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,52,¿Te interrumpen o no te dejan terminar de hablar?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,53,¿Te corrigen de manera humillante o con desprecio?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,54,"¿Se burlan de ti cuando expresas tristeza, enojo o miedo?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,55,"¿Te dicen cosas como que no sirves, no puedes o no vales?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,56,¿Te gritan delante de familiares o personas cercanas?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,57,¿Desacreditan tu opinión o tus logros de manera repetida?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,58,¿Te mandan mensajes ofensivos o insultantes?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,59,¿Te callan con palabras agresivas cuando intentas hablar?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,60,¿Se burlan de ti cuando lloras o muestras vulnerabilidad?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,61,¿Te culpan usando insultos o palabras ofensivas?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,62,¿Te dicen que te van a echar o dejar fuera usando gritos o insultos?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,63,"¿Te hacen comentarios ofensivos sobre tu vida, decisiones o forma de ser?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,64,¿Controlan o retienen el dinero que ganas?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,65,"¿Te quitan la tarjeta, clave o acceso a tu dinero?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,66,¿Te exigen justificar cada gasto que haces?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,67,¿Te ponen obstáculos para que trabajes o busques empleo?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,68,¿Te obligan a pedir dinero para cosas básicas?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,69,¿Ocultan o restringen dinero para castigarte o controlarte?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,70,¿Usan tu nombre o te meten en deudas sin tu autorización?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,71,¿Hacen compras o contratos con tu nombre sin consultarte?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,72,¿Te quitan documentos importantes para limitarte?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,73,¿Te impiden pagar o usar transporte para tus actividades?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,74,"¿Te niegan dinero para comida, medicinas o necesidades básicas?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,75,¿Te exigen entregar todo tu ingreso o beca?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,76,¿Retrasan a propósito el dinero que te corresponde para controlarte?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,77,¿Usan el dinero para impedir que sigas estudiando o capacitándote?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,78,¿Te hacen cubrir gastos que no te corresponden?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,79,"¿Te condicionan comida, apoyo o recursos a obedecer?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,80,"¿Retienen beca, pensión o ayuda económica que te corresponde?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,81,¿Te revisan y cuestionan constantemente cada compra?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,82,"¿Cortan internet, luz, comida u otros servicios para presionarte?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,83,¿Te presionan para que renuncies o dejes tu empleo?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,84,¿Sientes que te mantienen sin recursos para que dependas de ellos?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,85,¿Te tocan partes íntimas sin tu consentimiento?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,86,"¿Te presionan para besos, abrazos o contacto físico que no quieres?",A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,87,¿Insisten en conductas sexuales después de que dijiste que no?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,88,¿Te hacen comentarios sexuales que te incomodan o te avergüenzan?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,89,¿Te presionan para enviar imágenes íntimas o privadas?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,90,¿Comparten fotos o videos íntimos sin tu autorización?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,91,¿Te tocan de forma invasiva aunque hayas pedido que paren?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,92,¿Te obligan a ver contenido sexual o situaciones que no deseas?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,93,¿Te amenazan o presionan para conseguir favores de tipo sexual?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,94,¿Ignoran tus límites físicos incluso cuando los expresas claramente?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,95,¿Reaccionan con enojo o castigo cuando rechazas algo sexual?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,96,¿Te hacen preguntas sexuales que te incomodan o invaden tu privacidad?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,97,¿Te manipulan para aceptar contacto físico o sexual?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,98,¿Te hacen quedarte en una situación íntima o incómoda aunque quieras salir?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,99,¿Revisan tu cuerpo o tu ropa sin que tú lo autorices?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,100,¿Hacen chistes sexuales repetidos que te incomodan?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,101,¿Toman fotos o videos de ti sin pedir autorización?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,102,"¿Usan regalos, dinero o favores para presionarte sexualmente?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,103,"¿Te dejan de hablar, te castigan o te presionan cuando marcas límites?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,104,¿Te han tocado de forma íntima cuando estabas dormido/a o descansando?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,105,¿Usan comentarios sobre tu cuerpo para presionarte o incomodarte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,106,¿Te piden contraseñas o códigos de acceso para revisar tus cuentas?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,107,"¿Revisan tu celular, chats o fotos sin tu permiso?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,108,¿Exigen saber dónde estás en tiempo real o revisan tu ubicación constantemente?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,109,¿Te exigen responder mensajes o llamadas de inmediato siempre?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,110,"¿Crean cuentas falsas para vigilarte, seguirte o provocarte?",FRECUENTEMENTE,0.75,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,111,"¿Publican información, fotos o estados tuyos sin pedirte permiso?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,112,¿Comparten fotos o conversaciones privadas sin autorización?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,113,"¿Te mandan mensajes ofensivos, burlones o amenazantes?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,114,"¿Te amenazan, hostigan o exhiben en redes sociales?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,115,"¿Te obligan a enseñar chats, llamadas o redes para comprobar algo?",NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,116,¿Te cambian claves o te bloquean el acceso a cuentas sin avisarte?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,117,¿Usan aplicaciones o herramientas para rastrear tu movimiento?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,118,¿Te llaman por video para comprobar dónde estás o con quién estás?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,119,¿Revisan con quién interactúas en redes para controlarte?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,120,¿Sientes que no tienes privacidad en tu vida digital?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,121,¿Usan tus claves para entrar a tus cuentas sin tu permiso?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,122,¿Difunden rumores o mensajes falsos sobre ti por internet?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,123,¿Te etiquetan o mencionan en publicaciones sin tu autorización?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,124,¿Te exigen enviar tu ubicación cada vez que sales?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,125,"¿Borran contactos, chats o historial para aislarte o controlarte?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,126,"¿Recibes mensajes repetidos para presionarte, vigilarte o molestarte?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,127,¿Te dejan sin comida suficiente o sin acceso regular a alimentos?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,128,¿No te atienden cuando estás enfermo/a o con dolor?,A VECES,0.5,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,129,¿Te dejan solo/a sin la supervisión necesaria?,NO MUY FRECUENTEMENTE,0.25,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,130,¿Olvidan o dejan de darte medicamentos que necesitas?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,131,¿No te llevan a consultas o revisiones médicas importantes?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,132,"¿Te dejan sin ropa, abrigo o artículos básicos necesarios?",NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,133,¿No cubren necesidades básicas de higiene de forma repetida?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,134,¿No responden a emergencias cuando necesitas ayuda?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,135,¿Te dejan en un lugar inseguro o riesgoso sin cuidado?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,136,¿No respetan o no permiten un descanso adecuado cuando lo necesitas?,NUNCA,0.0,False,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,137,¿Te niegan apoyo básico para cubrir necesidades esenciales?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,138,¿Te dejan esperando de manera constante sin recogerte o acompañarte cuando hace falta?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,139,¿Vives o pasas tiempo en condiciones insalubres que no corrigen?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,140,¿No te protegen cuando otra persona te agrede o te pone en riesgo?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,141,"¿Ignoran señales claras de malestar, dolor o cansancio?",SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,142,¿No te dan transporte o apoyo para asistir a citas importantes?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,143,¿Dejan a menores sin la supervisión necesaria por periodos inadecuados?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,144,¿Te dejan sin acceso regular a agua o servicios básicos?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,145,¿No corrigen riesgos domésticos obvios y peligrosos?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,146,¿Te cargan responsabilidades de cuidado para las que no tienes capacidad o apoyo?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,147,¿Te ignoran por completo cuando estás en crisis o muy mal?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,148,¿Te impiden salir de casa y además revisan tu celular para controlarte?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,149,¿Te controlan el dinero y te insultan cuando pides algo básico?,SALTADA,0.0,True,76,CELAYA,133.0
+2026-05-18T12:40:00,KOKO,150,¿Después de una agresión no te llevan a revisión médica ni te apoyan?,SALTADA,0.0,True,76,CELAYA,133.0
